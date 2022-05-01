@@ -1,18 +1,15 @@
+/*
+Solution - https://redquark.org/leetcode/0001-two-sum/
+TC:- O(n) and SC:- O(n)
+*/
 class Solution {
-    /*TC:- O(n) and SC:- O(n) */
+    
     public int[] twoSum(int[] nums, int target) {
-        // Array to store result
         int[] result = new int[2];
-        // This map will store the difference and the corresponding index
         Map<Integer, Integer> map = new HashMap<>();
-        // Loop through the entire array
         for (int i = 0; i < nums.length; i++) {
-            // If we have seen the current element before
-            // It means we have already encountered the other number of the pair
             if (map.containsKey(nums[i])) {
-                // Index of the current element
                 result[0] = i;
-                // Index of the other element of the pair
                 result[1] = map.get(nums[i]);
             }
             // If we have not seen the current before
