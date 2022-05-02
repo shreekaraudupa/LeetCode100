@@ -1,3 +1,6 @@
+/*
+Solution - https://www.goodtecher.com/leetcode-122-best-time-to-buy-and-sell-stock-ii/
+*/
 class Solution {
     public int maxProfit(int[] prices) {
           int maxProfit = 0;
